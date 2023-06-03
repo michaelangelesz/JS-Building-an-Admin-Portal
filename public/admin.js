@@ -22,6 +22,19 @@ function renderBook(book){
     let saveButton = document.createElement('button')
     saveButton.textContent = 'Save'
 
+    saveButton.addEventListener('click', () => {
+        fetch('http://localhost:3001/updateBook', {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: book.id,
+                quantity: quantityInput.value
+            })
+        })
+    })
+
     root.append(li)
 }
 

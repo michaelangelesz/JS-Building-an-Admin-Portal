@@ -35,6 +35,8 @@ function renderBook(book){
         })
     })
 
+    li.append(quantityInput, saveButton)
+
     root.append(li)
 }
 

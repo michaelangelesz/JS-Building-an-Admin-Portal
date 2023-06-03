@@ -15,6 +15,9 @@ function renderBook(book){
 
     let li = document.createElement('li')
     li.textContent = book.title
+
+    let quantityInput = document.createElement('input')
+    quantityInput.value = book.quantity
 }
 
 main();

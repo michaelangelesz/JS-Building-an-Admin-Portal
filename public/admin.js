@@ -21,6 +21,8 @@ function renderBook(book){
 
     let saveButton = document.createElement('button')
     saveButton.textContent = 'Save'
+
+    root.append(li)
 }
 
 main();

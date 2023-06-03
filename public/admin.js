@@ -35,6 +35,18 @@ function renderBook(book){
         })
     })
 
+    let deleteButton = document.createElement('button')
+    deleteButton.textContent = 'Delete'
+
+    deleteButton.addEventListener('click', () => {
+        fetch(`http://localhost:3001/deleteBook/${book.id}`, {
+            method: 'DELETE'
+        })
+        .then(() => {
+            li.remove()
+        })
+    })
+
     li.append(quantityInput, saveButton)
 
     root.append(li)

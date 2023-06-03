@@ -11,6 +11,7 @@ async function main() {
 }
 
 function renderBook(book){
+    let root = document.querySelector('#root')
     
 }
 

@@ -10,4 +10,8 @@ async function main() {
     books.forEach(renderBook)
 }
 
+function renderBook(book){
+    
+}
+
 main();

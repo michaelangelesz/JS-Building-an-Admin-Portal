@@ -18,6 +18,9 @@ function renderBook(book){
 
     let quantityInput = document.createElement('input')
     quantityInput.value = book.quantity
+
+    let saveButton = document.createElement('button')
+    saveButton.textContent = 'Save'
 }
 
 main();

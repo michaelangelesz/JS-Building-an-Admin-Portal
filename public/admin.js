@@ -12,7 +12,9 @@ async function main() {
 
 function renderBook(book){
     let root = document.querySelector('#root')
-    
+
+    let li = document.createElement('li')
+    li.textContent = book.title
 }
 
 main();
